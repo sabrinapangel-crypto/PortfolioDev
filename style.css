@@ -33,6 +33,12 @@ header nav a {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 43, 110, 0.4);
 }
 
 /* ---------- SECTIONS ---------- */
@@ -64,6 +70,12 @@ section {
   border-radius: 8px;
   display: inline-block;
   margin-top: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero span:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 43, 110, 0.3);
 }
 
 .hero-year {
@@ -119,16 +131,47 @@ section {
   background-color: #d2e1cf;
   border-radius: 15px;
   padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.card h3 {
-  color: #1c4b33;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card summary {
   font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
 }
 
-.softwares img {
-  width: 40px;
-  margin-right: 10px;
+.card summary::-webkit-details-marker {
+  display: none;
+}
+
+.card summary::after {
+  content: '▾';
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.card p, .card ul, .card img, .card .tags {
+  margin-top: 0.8rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ---------- TAGS ---------- */
@@ -136,7 +179,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 30px;
 }
 
 .tag {
@@ -145,6 +187,12 @@ section {
   border-radius: 25px;
   padding: 10px 20px;
   font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 146, 179, 0.4);
 }
 
 /* ---------- PROJECTS SECTION ---------- */
@@ -171,6 +219,14 @@ section {
   padding: 20px;
   text-align: left;
   color: #1c4b33;
+  background-color: #d2e1cf;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project-card h3 {
@@ -192,6 +248,12 @@ section {
   padding: 8px 15px;
   border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(95, 224, 161, 0.4);
 }
 
 /* Color themes for each project type */
@@ -213,7 +275,6 @@ footer h2 {
   font-size: 4rem;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.1;
-
 }
 
 footer span {
