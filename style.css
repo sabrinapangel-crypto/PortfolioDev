@@ -1,0 +1,232 @@
+/* ---------- BASE STYLES ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  color: #1c4b33;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #9eb8a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #1c4b33;
+  font-weight: 600;
+}
+
+.contact-btn {
+  background-color: #ff2b6e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 60px;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  background-color: #a7bba3;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #1c4b33;
+  letter-spacing: 2px;
+}
+
+.hero span {
+  font-size: 1.2rem;
+  background-color: #ff2b6e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.hero-year {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 700;
+  background: #1c4b33;
+  color: #ffef7a;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+/* ---------- ABOUT SECTION ---------- */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 55%;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  color: #1c4b33;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  color: #4a5d4b;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+  width: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* ---------- INFO CARDS ---------- */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #d2e1cf;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.card h3 {
+  color: #1c4b33;
+  font-weight: 700;
+}
+
+.softwares img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* ---------- TAGS ---------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.tag {
+  background-color: #ff92b3;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+/* ---------- PROJECTS SECTION ---------- */
+.projects {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  color: #ff2b6e;
+  font-weight: 900;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.project-card {
+  border-radius: 25px;
+  padding: 20px;
+  text-align: left;
+  color: #1c4b33;
+}
+
+.project-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.project-card p {
+  color: #3e573f;
+  font-size: 0.9rem;
+}
+
+.project-card button {
+  margin-top: 10px;
+  border: none;
+  background-color: #5fe0a1;
+  color: #1c4b33;
+  font-weight: 700;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Color themes for each project type */
+.packaging { background-color: #cfffd2; }
+.social { background-color: #fff1a6; }
+.poster { background-color: #dfd2ff; }
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 120px 20px 60px;
+  background: url("asset4/Asset 44.png") center/cover no-repeat;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  color: #1c4b33;
+}
+
+footer h2 {
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.1;
+
+}
+
+footer span {
+  background-color: #ff2b6e;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-top: 40px;
+  color: #2f4c36;
+  font-weight: 600;
+}

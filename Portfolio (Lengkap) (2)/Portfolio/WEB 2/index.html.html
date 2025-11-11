@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina - Graphic Designer Portfolio</title>
+    
+    <!-- External CDN Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Link to your new external stylesheet -->
+    <link rel="stylesheet" href="/Users/sabri/Assignment/Semester 5/DDM/My Portfolio/style.css.css">
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'soft-pink': '#FFD1E3',
+                        'light-pink': '#FFEBF3',
+                        'dark-pink': '#FF80B6',
+                        'accent-pink': '#FF3385',
+                        'soft-peach': '#FFEDDF',
+                        'peach': '#FFC09F',
+                        'lilac': '#E0BBE4',
+                        'lavender-light': '#F5E1F9',
+                        'gray-text': '#5C5C5C',
+                        'light-gray-bg': '#F9F9F9',
+                    },
+                    boxShadow: {
+                        'custom': '0 4px 10px rgba(0, 0, 0, 0.08)',
+                        'pink-glow': '0 8px 20px rgba(255, 51, 133, 0.2)',
+                    }
+                },
+            },
+        };
+    </script>
+    
+</head>
+<body class="bg-light-gray-bg pb-12">
+
+    <!-- ==== HEADER NAVIGATION ==== -->
+    <header class="py-4 bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="font-extrabold text-lg text-accent-pink">
+                [Your Name]
+            </div>
+            <nav class="space-x-4 text-gray-700 font-semibold">
+                <a href="#about" class="hover:text-accent-pink transition-colors">About</a>
+                <a href="#projects" class="hover:text-accent-pink transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-accent-pink transition-colors">Contact</a>
+                <a href="#" class="btn-primary px-5 py-2">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==== MAIN CONTENT ==== -->
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+        <!-- ==== HERO SECTION ==== -->
+        <section class="relative bg-soft-pink rounded-3xl p-10 md:p-16 flex items-center justify-between overflow-hidden shadow-pink-glow">
+            <div class="z-10 relative">
+                <div class="text-xs font-bold bg-dark-pink text-white px-4 py-2 rounded-full inline-block mb-4 transform -rotate-2">
+                    ✨ Seeking Internship!
+                </div>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-accent-pink leading-tight mb-4">
+                    Playful & Energetic <br> Graphic Designer
+                </h1>
+                <p class="text-lg md:text-xl text-gray-text max-w-lg mb-8">
+                    Crafting delightful visuals with a passion for UI/UX, branding, and captivating layouts.
+                </p>
+                <a href="#projects" class="btn-primary">
+                    See My Portfolio <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            
+            <!-- Mockup Photo Placeholder -->
+            <div class="hidden md:block absolute right-10 top-1/2 -translate-y-1/2 z-0 opacity-90">
+                <img src="https://placehold.co/350x350/FFC09F/FFFFFF?text=Your+Mockup+Photo+Here" alt="Mockup Photo Placeholder" class="w-80 h-80 rounded-3xl transform rotate-6 shadow-lg">
+            </div>
+        </section>
+
+        <!-- ==== ABOUT ME SECTION ==== -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Left Column: About Me Card -->
+            <div class="card p-10 bg-soft-peach">
+                <h2 class="text-4xl font-extrabold text-peach mb-4">About Me</h2>
+                <p class="text-lg text-gray-text leading-relaxed">
+                    Hello! I'm [Your Name], a graphic design student at Binus New Media with a knack for making designs come alive. My journey in design is driven by curiosity and a desire to create user-friendly and aesthetically pleasing experiences.
+                </p>
+                <p class="mt-4 text-lg text-gray-text leading-relaxed">
+                    I love diving into projects that challenge my creativity, whether it's brainstorming new app features or finessing a brand's visual identity.
+                </p>
+            </div>
+            
+            <!-- Right Column: Stacking Photo and Skills -->
+            <div class="space-y-8">
+                <!-- Photo Placeholder -->
+                <div class="photo-placeholder">
+                    <span>Your Photo Here :)</span>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="card p-10 bg-lavender-light">
+                    <h2 class="text-4xl font-extrabold text-lilac mb-4">My Skills & Tools</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill">Figma</span>
+                        <span class="skill-pill">Adobe Illustrator</span>
+                        <span class="skill-pill">Adobe Photoshop</span>
+                        <span class="skill-pill">UI/UX Design</span>
+                        <span class="skill-pill">Branding</span>
+                        <span class="skill-pill">Prototyping</span>
+                        <span class="skill-pill">Visual Design</span>
+                    </div>
+                    <p class="mt-6 text-base text-gray-text">Always eager to learn new tools and techniques!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== PROJECTS SECTION ==== -->
+        <section id="projects" class="card p-10">
+            <h2 class="text-4xl font-extrabold text-accent-pink text-center mb-8">My Projects</h2>
+
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8 tab-nav">
+                <a href="#tab-1" id="tab-btn-1" class="tab-btn">All Projects</a>
+                <a href="#tab-2" id="tab-btn-2" class="tab-btn">UI/UX & Apps</a>
+                <a href="#tab-3" id="tab-btn-3" class="tab-btn">Branding & Logos</a>
+                <a href="#tab-4" id="tab-btn-4" class="tab-btn">Visual & Print</a>
+            </div>
+
+            <!-- Hidden radio inputs for :target to work -->
+            <div class="hidden">
+                <input type="radio" name="tabs" id="tab-1" class="tab-target" checked>
+                <input type="radio" name="tabs" id="tab-2" class="tab-target">
+                <input type="radio" name="tabs" id="tab-3" class="tab-target">
+                <input type="radio" name="tabs" id="tab-4" class="tab-target">
+            </div>
+
+            <!-- Tab Content Containers -->
+            <div class="mt-8">
+                
+                <!-- Tab 1: All Projects -->
+                <div class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-tab-id="tab-1" id="tab-content-1">
+                    <!-- BinGo Project -->
+                    <div class="project-card bg-light-pink rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/FFD1E3/FFFFFF?text=BinGo+App" alt="BinGo App Mockup" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-accent-pink mb-2">BIN GO (App Prototype)</h3>
+                            <p class="text-gray-text text-base">Gamified recycling app for campus students. UI/UX, Research, Prototyping.</p>
+                            <a href="#" class="btn-project btn-project-pink">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Bluebird Project -->
+                    <div class="project-card bg-soft-peach rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/FFEDDF/333333?text=Bluebird+Logo" alt="Bluebird Logo Redesign" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-peach mb-2">Bluebird Redesign</h3>
+                            <p class="text-gray-text text-base">Modern brand identity and logo concept for a logistics company.</p>
+                            <a href="#" class="btn-project btn-project-peach">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Posters Project -->
+                    <div class="project-card bg-lavender-light rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/E0BBE4/FFFFFF?text=Playful+Posters" alt="Poster Collection" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-lilac mb-2">Playful Poster Collection</h3>
+                            <p class="text-gray-text text-base">A series of visual pieces showcasing playful layouts and color theory.</p>
+                            <a href="#" class="btn-project btn-project-lilac">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Placeholder Project 4 -->
+                    <div class="project-card bg-light-pink rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/FFD1E3/FFFFFF?text=New+Project" alt="New Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-accent-pink mb-2">New Project Idea</h3>
+                            <p class="text-gray-text text-base">Bring your next creative assignment to life here!</p>
+                            <a href="#" class="btn-project btn-project-pink">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: UI/UX & Apps -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-tab-id="tab-2" id="tab-content-2">
+                    <div class="project-card bg-light-pink rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/FFD1E3/FFFFFF?text=BinGo+App" alt="BinGo App Mockup" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-accent-pink mb-2">BIN GO (App Prototype)</h3>
+                            <p class="text-gray-text text-base">Gamified recycling app for campus students. UI/UX, Research, Prototyping.</p>
+                            <a href="#" class="btn-project btn-project-pink">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card bg-light-pink rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/FFD1E3/FFFFFF?text=UI+Challenge" alt="UI Challenge" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-accent-pink mb-2">UI Daily Challenge</h3>
+                            <p class="text-gray-text text-base">Exploring creative UI solutions for everyday apps.</p>
+                            <a href="#" class="btn-project btn-project-pink">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Branding & Logos -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-tab-id="tab-3" id="tab-content-3">
+                    <div class="project-card bg-soft-peach rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/FFEDDF/333333?text=Bluebird+Logo" alt="Bluebird Logo Redesign" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-peach mb-2">Bluebird Redesign</h3>
+                            <p class="text-gray-text text-base">Modern brand identity and logo concept for a logistics company.</p>
+                            <a href="#" class="btn-project btn-project-peach">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card bg-soft-peach rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/FFEDDF/333333?text=Brand+Identity" alt="Brand Identity" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-peach mb-2">Local Cafe Branding</h3>
+                            <p class="text-gray-text text-base">Full brand identity development for a cozy local cafe.</p>
+                            <a href="#" class="btn-project btn-project-peach">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Visual & Print -->
+                <div class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-tab-id="tab-4" id="tab-content-4">
+                    <div class="project-card bg-lavender-light rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/E0BBE4/FFFFFF?text=Playful+Posters" alt="Poster Collection" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-lilac mb-2">Playful Poster Collection</h3>
+                            <p class="text-gray-text text-base">A series of visual pieces showcasing playful layouts and color theory.</p>
+                            <a href="#" class="btn-project btn-project-lilac">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card bg-lavender-light rounded-xl shadow-custom overflow-hidden">
+                        <img src="https://placehold.co/600x400/E0BBE4/FFFFFF?text=Magazine+Spread" alt="Magazine Spread" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-lilac mb-2">Magazine Layout</h3>
+                            <p class="text-gray-text text-base">Creative magazine spread design focusing on typography and imagery.</p>
+                            <a href="#" class="btn-project btn-project-lilac">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==== TESTIMONIALS SECTION ==== -->
+        <section class="card p-10 bg-soft-pink">
+            <h2 class="text-4xl font-extrabold text-accent-pink text-center mb-8">What People Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-custom flex items-start space-x-4">
+                    <img src="https://placehold.co/50x50/FFD1E3/FF3385?text=🧑‍🏫" alt="Avatar" class="w-12 h-12 rounded-full">
+                    <div>
+                        <p class="font-semibold text-lg text-gray-900 mb-2">"An incredibly talented and enthusiastic designer. [Your Name]'s work always brings a fresh perspective!"</p>
+                        <p class="text-gray-600">- Lecturer at Binus New Media</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-custom flex items-start space-x-4">
+                    <img src="https://placehold.co/50x50/FFEDDF/FFC09F?text=👥" alt="Avatar" class="w-12 h-12 rounded-full">
+                    <div>
+                        <p class="font-semibold text-lg text-gray-900 mb-2">"Working with [Your Name] on the BinGo app was a breeze. Creative ideas and a great team player!"</p>
+                        <p class="text-gray-600">- Project Teammate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== CONTACT SECTION ==== -->
+        <section id="contact" class="card p-10 bg-soft-peach text-center">
+            <h2 class="text-4xl font-extrabold text-peach mb-4">Ready to Create Something Amazing?</h2>
+            <p class="text-lg text-gray-text max-w-2xl mx-auto mb-8">
+                I'm actively looking for an internship opportunity to apply my skills and grow with a dynamic team. Let's connect!
+            </p>
+            <a href="mailto:[your-email]@binus.ac.id?subject=Internship Inquiry from your Portfolio" class="btn-primary">
+                Email Me Directly <i class="fas fa-paper-plane ml-2"></i>
+            </a>
+            <div class="mt-8 flex justify-center space-x-6 text-2xl text-peach">
+                <a href="#" class="hover:text-accent-pink transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-accent-pink transition-colors"><i class="fab fa-behance"></i></a>
+                <a href="#" class="hover:text-accent-pink transition-colors"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="mt-12 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 [Your Name]. All rights reserved. Built with 💖 and Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>

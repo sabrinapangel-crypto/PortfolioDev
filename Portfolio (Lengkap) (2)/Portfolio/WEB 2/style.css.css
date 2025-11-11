@@ -1,0 +1,140 @@
+/* --- Base & Global Styles --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F9F9F9; /* Light gray background */
+    color: #5C5C5C; /* Default text color */
+}
+
+.text-gradient-purple-pink {
+    background: linear-gradient(to right, #E0BBE4, #FF80B6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Reusable Component Styles --- */
+.card {
+    background-color: white;
+    border-radius: 1.5rem; /* 24px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary {
+    background-color: #FF3385;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+.btn-primary:hover {
+    background-color: #FF1A6B;
+}
+
+/* --- Project Tab Navigation Styles --- */
+.tab-content {
+    display: none;
+}
+.tab-target:target ~ .tab-content[data-tab-id="tab-1"],
+.tab-target:target ~ .tab-content[data-tab-id="tab-2"],
+.tab-target:target ~ .tab-content[data-tab-id="tab-3"],
+.tab-target:target ~ .tab-content[data-tab-id="tab-4"] {
+    display: block;
+}
+/* Default active tab (if no hash is present) */
+:not(.tab-target):not(:has(.tab-target)) ~ #tab-content-1 {
+    display: block;
+}
+
+/* Active tab button style */
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: #FF3385; /* Active text color */
+    background-color: #FFEBF3; /* Active background */
+    transition: all 0.2s ease;
+}
+/* Inactive tab button style */
+.tab-nav a:not(.tab-btn) {
+    color: #FF80B6; /* Inactive text color */
+    background-color: transparent;
+}
+.tab-nav a {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.tab-nav a:hover {
+    background-color: #FFEBF3;
+    color: #FF3385;
+}
+
+/* Specific styling for when a tab is targeted */
+#tab-1:target ~ .tab-nav a[href="#tab-1"],
+#tab-2:target ~ .tab-nav a[href="#tab-2"],
+#tab-3:target ~ .tab-nav a[href="#tab-3"],
+#tab-4:target ~ .tab-nav a[href="#tab-4"] {
+    background-color: #FFEBF3;
+    color: #FF3385;
+}
+/* Ensure default tab 1 is active if no hash */
+.tab-nav a[href="#tab-1"]:not(.tab-target):not(:has(.tab-target)) {
+     background-color: #FFEBF3;
+     color: #FF3385;
+}
+
+/* --- Specific Component Styles --- */
+.skill-pill {
+    background-color: #E0BBE4; /* bg-lilac */
+    color: white;
+    padding: 0.5rem 1rem; /* text-sm px-4 py-2 */
+    border-radius: 9999px; /* rounded-full */
+    font-weight: 600; /* font-semibold */
+    transition: all 0.2s ease;
+}
+.skill-pill:hover {
+    background-color: #C695C6; /* A darker lilac */
+    transform: translateY(-2px); /* Add a little lift */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.photo-placeholder {
+    background-color: #F5E1F9; /* lavender-light */
+    border-radius: 1.5rem; /* 24px */
+    border: 2px dashed #E0BBE4; /* lilac */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C695C6; /* darker lilac */
+    font-weight: 600;
+    min-height: 200px;
+}
+
+.btn-project {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.2s ease;
+    display: inline-block; /* Ensure it behaves like a button */
+    margin-top: 0.75rem; /* mt-3 */
+}
+.btn-project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-project-pink { background-color: #FF80B6; /* dark-pink */ }
+.btn-project-pink:hover { background-color: #FF3385; /* accent-pink */ }
+
+.btn-project-peach { background-color: #FFC09F; /* peach */ }
+.btn-project-peach:hover { background-color: #FFAB88; /* darker-peach */ }
+
+.btn-project-lilac { background-color: #E0BBE4; /* lilac */ }
+.btn-project-lilac:hover { background-color: #C695C6; /* darker-lilac */ }
