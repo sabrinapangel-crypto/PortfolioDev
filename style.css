@@ -117,6 +117,7 @@ section {
   width: 300px;
   border-radius: 20px;
   object-fit: cover;
+  pointer-events: none;
 }
 
 /* ---------- INFO CARDS ---------- */
@@ -200,6 +201,16 @@ details[open] summary::after {
   background-color: #ffffff;
   text-align: center;
   padding: 40px 0;
+}
+
+.projects .decor3 {
+  position: absolute;
+  top: 100%;
+  right: -60px;
+  width: 200px;
+  opacity: 1;
+  pointer-events: none; /* ensures it doesn't block buttons */
+  z-index: 0;
 }
 
 .projects h2 {
@@ -346,20 +357,22 @@ details[open] summary::after {
 /* ---------- FOOTER ---------- */
 footer {
   text-align: center;
-  padding: 120px 20px 60px;
+  padding: 20px 20px 60px;
   background: url("asset4/Asset 44.png") center/cover no-repeat;
   border-radius: 20px 20px 0 0;
   position: relative;
   color: #1c4b33;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer h2 {
   font-size: 4rem;
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.1;
+  margin-bottom: 10px;
 }
 
-footer span {
+/* Target only the span inside the h2 */
+footer h2 span {
   background-color: #ff2b6e;
   color: white;
   padding: 10px 15px;
@@ -369,7 +382,42 @@ footer span {
 }
 
 footer p {
-  margin-top: 40px;
+  margin-top: 20px;
   color: #2f4c36;
   font-weight: 600;
+}
+
+.contact-info-things {
+  line-height: 1rem;
+}
+
+.contact-info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #1c4b33;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.contact-item:hover {
+  color: #ff2b6e;
+  transform: scale(1.05);
 }
