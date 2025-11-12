@@ -48,15 +48,15 @@ section {
 
 /* ---------- HERO SECTION ---------- */
 .hero {
-  margin-top: 60px;
+  margin: 60px auto; /* auto untuk center horizontal */
   background-image: url("asset1/Asset 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 90%;
-  height: 400px;  /* membuat gambar memenuhi tinggi layar */
+  width: 80%;
+  height: 350px;
+  border-radius: 20px;
 }
-
 /* ---------- ABOUT SECTION ---------- */
 .about {
   display: flex;
