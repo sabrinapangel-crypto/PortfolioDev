@@ -48,13 +48,13 @@ section {
 
 /* ---------- HERO SECTION ---------- */
 .hero {
-  margin: 60px auto; /* auto untuk center horizontal */
+  margin: -100px auto;
   background-image: url("asset1/Asset 2.png");
-  background-size: cover;
+  background-size: contain;   /* biar gambar selalu terlihat utuh */
   background-position: center;
   background-repeat: no-repeat;
   width: 80%;
-  height: 350px;
+  aspect-ratio: 16 / 9;       /* proporsi tetap, responsif */
   border-radius: 20px;
 }
 /* ---------- ABOUT SECTION ---------- */
