@@ -9,7 +9,7 @@ body {
 
 /* ---------- HEADER ---------- */
 header {
-  background-color: #9eb8a3;
+  background-color: #AEC5B7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,12 +22,12 @@ header {
 header nav a {
   margin: 0 20px;
   text-decoration: none;
-  color: #1c4b33;
+  color: #21734C;
   font-weight: 600;
 }
 
 .contact-btn {
-  background-color: #ff2b6e;
+  background-color: #FF3385;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -48,44 +48,13 @@ section {
 
 /* ---------- HERO SECTION ---------- */
 .hero {
-  background-color: #a7bba3;
-  border-radius: 20px;
-  padding: 40px;
-  text-align: center;
-  position: relative;
-}
-
-.hero h1 {
-  font-size: 5rem;
-  font-family: 'Montserrat', sans-serif;
-  color: #1c4b33;
-  letter-spacing: 2px;
-}
-
-.hero span {
-  font-size: 1.2rem;
-  background-color: #ff2b6e;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hero span:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(255, 43, 110, 0.3);
-}
-
-.hero-year {
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: 700;
-  background: #1c4b33;
-  color: #ffef7a;
-  padding: 5px 15px;
-  border-radius: 10px;
+  margin-top: 60px;
+  background-image: url("asset1/Asset 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 400px;  /* membuat gambar memenuhi tinggi layar */
 }
 
 /* ---------- ABOUT SECTION ---------- */
@@ -102,12 +71,12 @@ section {
 
 .about-text h2 {
   font-size: 3rem;
-  color: #1c4b33;
+  color: #21734C;
   margin-bottom: 10px;
 }
 
 .about-text p {
-  color: #4a5d4b;
+  color: #21734C;
   line-height: 1.6;
   max-width: 90%;
 }
@@ -129,7 +98,7 @@ section {
 }
 
 .card {
-  background-color: #d2e1cf;
+  background-color: #AEC5B7;
   border-radius: 15px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -183,7 +152,7 @@ details[open] summary::after {
 }
 
 .tag {
-  background-color: #ff92b3;
+  background-color: #FF3385;
   color: white;
   border-radius: 25px;
   padding: 10px 20px;
@@ -197,25 +166,16 @@ details[open] summary::after {
 }
 
 /* ---------- PROJECTS SECTION ---------- */
+/* ===== PROJECTS SECTION ===== */
 .projects {
   background-color: #ffffff;
   text-align: center;
   padding: 40px 0;
 }
 
-.projects .decor3 {
-  position: absolute;
-  top: 100%;
-  right: -60px;
-  width: 200px;
-  opacity: 1;
-  pointer-events: none; /* ensures it doesn't block buttons */
-  z-index: 0;
-}
-
 .projects h2 {
   font-size: 3rem;
-  color: #ff2b6e;
+  color: #FF3385;
   font-weight: 900;
 }
 
@@ -227,11 +187,12 @@ details[open] summary::after {
   padding: 0 40px;
 }
 
+/* ===== PROJECT CARD ===== */
 .project-card {
   border-radius: 25px;
   padding: 20px;
   text-align: left;
-  color: #1c4b33;
+  color: #21734C;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -247,16 +208,17 @@ details[open] summary::after {
 }
 
 .project-card p {
-  color: #3e573f;
+  color: #21734C;
   font-size: 0.9rem;
 }
 
+/* ===== PROJECT BUTTON ===== */
 .project-button {
   display: inline-block;
   margin-top: 10px;
   border: none;
   background-color: #5fe0a1;
-  color: #1c4b33;
+  color: #21734C;
   font-weight: 700;
   padding: 8px 15px;
   border-radius: 8px;
@@ -270,20 +232,61 @@ details[open] summary::after {
   box-shadow: 0 6px 15px rgba(95, 224, 161, 0.4);
 }
 
-/* Warna tema tiap kartu */
+/* ===== PROJECT CARD COLORS ===== */
 .packaging {
-  background-color: #cfffd2;
+  background-color: #42DD9B;
 }
 
 .social {
-  background-color: #fff1a6;
+  background-color: #FEF284;
 }
 
 .poster {
-  background-color: #dfd2ff;
+  background-color: #D1C5F5;
 }
 
-/* Popup styles */
+/* ===== BUTTON COLORS PER PROJECT ===== */
+.packaging .project-button {
+  background-color: #E1FFC1;
+  color: #42DD9B;
+}
+
+.packaging .project-button:hover {
+  box-shadow: 0 6px 15px rgba(28, 75, 51, 0.4);
+}
+
+.social .project-button {
+  background-color: #FFCC33;
+  color: #FEF284;
+}
+
+.social .project-button:hover {
+  box-shadow: 0 6px 15px rgba(255, 43, 110, 0.4);
+}
+
+.poster .project-button {
+  background-color: #F5F5FF;
+  color: #D1C5F5;
+}
+
+.poster .project-button:hover {
+  box-shadow: 0 6px 15px rgba(123, 91, 240, 0.4);
+}
+
+/* ===== MATCH CARD TITLES TO POPUP THEME ===== */
+.packaging h3 {
+  color: #E1FFC1;
+}
+
+.social h3 {
+  color: #FFCC33;
+}
+
+.poster h3 {
+  color: #F5F5FF;
+}
+
+/* ===== POPUP BASE STYLES ===== */
 .popup {
   display: none;
   position: fixed;
@@ -291,7 +294,7 @@ details[open] summary::after {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(8px); /* ✨ blur background */
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 1000;
   justify-content: center;
@@ -328,30 +331,75 @@ details[open] summary::after {
 
 .popup-content h3 {
   font-size: 1.5rem;
-  color: #ff2b6e;
+  color: #FF3385;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
 .popup-content p {
   font-size: 1rem;
-  color: #3e573f;
+  color: #21734C;
   line-height: 1.6;
 }
 
+/* ===== POPUP COLOR THEMES ===== */
+
+/* PACKAGING POPUP */
+#packaging-popup .popup-content {
+  background-color: #42DD9B;
+  color: #1c4b33;
+}
+
+#packaging-popup .popup-content h3 {
+  color: #E1FFC1;
+}
+
+#packaging-popup .popup-content p {
+  color: #E1FFC1;
+}
+
+/* SOCIAL POPUP */
+#social-popup .popup-content {
+  background-color: #FEF284;
+  color: #6b4a00;
+}
+
+#social-popup .popup-content h3 {
+  color: #FFCC33;
+}
+
+#social-popup .popup-content p {
+  color: #FFCC33;
+}
+
+/* POSTER POPUP */
+#poster-popup .popup-content {
+  background-color: #D1C5F5;
+  color: #3d2c8d;
+}
+
+#poster-popup .popup-content h3 {
+  color: #F5F5FF;
+}
+
+#poster-popup .popup-content p {
+  color: #F5F5FF;
+}
+
+/* ===== CLOSE BUTTON ===== */
 .close-button {
   position: absolute;
   top: 10px;
   right: 15px;
   font-size: 28px;
   text-decoration: none;
-  color: #ff2b6e;
+  color: #000000;
   font-weight: bold;
   transition: color 0.2s ease;
 }
 
 .close-button:hover {
-  color: #ff6194;
+  color: #b4b4b4;
 }
 
 /* ---------- FOOTER ---------- */
@@ -361,7 +409,7 @@ footer {
   background: url("asset4/Asset 44.png") center/cover no-repeat;
   border-radius: 20px 20px 0 0;
   position: relative;
-  color: #1c4b33;
+  color: #21734C;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -371,9 +419,8 @@ footer h2 {
   margin-bottom: 10px;
 }
 
-/* Target only the span inside the h2 */
 footer h2 span {
-  background-color: #ff2b6e;
+  background-color: #FF3385;
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
@@ -383,7 +430,7 @@ footer h2 span {
 
 footer p {
   margin-top: 20px;
-  color: #2f4c36;
+  color: #21734C;
   font-weight: 600;
 }
 
@@ -405,7 +452,7 @@ footer p {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #1c4b33;
+  color: #21734C;
   font-weight: 600;
   font-size: 1.1rem;
   transition: transform 0.2s ease, color 0.2s ease;
@@ -418,6 +465,6 @@ footer p {
 }
 
 .contact-item:hover {
-  color: #ff2b6e;
+  color: #FF3385;
   transform: scale(1.05);
 }
