@@ -123,6 +123,16 @@ section {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+.card img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* biar lebih halus */
+}
+
+.card img:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
 .card summary {
   font-weight: 700;
   font-size: 1.1rem;
@@ -532,13 +542,26 @@ footer::before {
 }
 
 .contact-item img {
-  width: 26px;
-  height: 26px;
+  width: 50px;
+  height: 50px;
 }
 
 .contact-item:hover {
   color: #FF3385;
   transform: scale(1.05);
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(33, 115, 76, 0.3);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #21734C;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.8;
 }
 
 /* ================== RESPONSIVE ================== */
