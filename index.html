@@ -157,23 +157,22 @@
             <img src="asset4/phone.png" alt="Phone Icon">
             <span>(+62) 895 6348 66564</span>
           </div>
+       </div>
       </div>
     </div>
+  </footer>
+  <script>
+    const elements = document.querySelectorAll('.reveal');
 
-  </div>
-</footer>
-<script>
-  const elements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.15 });
-
-  elements.forEach(el => observer.observe(el));
-</script>
+    elements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
