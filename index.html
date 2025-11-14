@@ -19,10 +19,10 @@
   </header>
 
   <!-- HERO SECTION -->
-<section class="hero"></section>
+  <section class="hero"></section>
 
   <!-- ABOUT SECTION -->
-  <section id="about" class="about">
+  <section id="about" class="about reveal">
     <div class="about-text">
       <h2>Hello, I'm Sabrina!</h2>
       <p>
@@ -71,7 +71,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects reveal">
     <h2>MY PROJECTS!</h2>
     <div class="projects-grid">
 
@@ -127,7 +127,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer id="contact">
+  <footer id="contact" class="reveal">
     <div class="footer-overlay">
       <!-- CONTACT FORM -->
       <div class="contact-form-container">
@@ -162,5 +162,18 @@
 
   </div>
 </footer>
+<script>
+  const elements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  elements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
